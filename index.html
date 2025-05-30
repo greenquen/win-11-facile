@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows 11 - Gratuit pour Tous</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom right, #e0f2fe, #f0fdf4);
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(to right, #0f172a, #1e40af);
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #1e3a8a;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      padding: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #3b82f6;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b2af96d3');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero > * {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3.2em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #10b981;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .btn:hover {
+      background-color: #059669;
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 40px;
+      color: #1e3a8a;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      color: #1e40af;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f1f5f9;
+    }
+    .features div {
+      max-width: 200px;
+    }
+    .features i {
+      font-size: 2em;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Logo Windows 11">
+    <h1>Windows 11 - Gratuit pour Tous</h1>
+    <p>Obtenez Windows 11 sur n'importe quel PC, sans payer et sans tracas</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#guides">Guides</a>
+    <a href="#astuces">Astuces</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Transformez votre ancien PC avec Windows 11</h1>
+    <p>Installation simple, rapide et 100% gratuite. Aucune connaissance requise.</p>
+    <a href="#services" class="btn">Commencer maintenant</a>
+  </section>
+
+  <section class="features">
+    <div>
+      <i class="fas fa-bolt"></i>
+      <h4>Installation Rapide</h4>
+      <p>Moins de 30 minutes pour démarrer avec Windows 11</p>
+    </div>
+    <div>
+      <i class="fas fa-shield-alt"></i>
+      <h4>Sécurité assurée</h4>
+      <p>Guides sûrs et vérifiés, sans logiciel malveillant</p>
+    </div>
+    <div>
+      <i class="fas fa-user-check"></i>
+      <h4>Accessible à tous</h4>
+      <p>Pas besoin d’être technicien pour réussir l’installation</p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services Gratuits</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Guide pas à pas</h3>
+        <p>Tutoriels clairs avec captures d'écran pour chaque étape.</p>
+      </div>
+      <div class="card">
+        <h3>Support Email</h3>
+        <p>Envoyez-nous vos questions, nous répondons sous 24h.</p>
+      </div>
+      <div class="card">
+        <h3>Fichiers ISO fiables</h3>
+        <p>Liens directs pour télécharger Windows 11 en toute sécurité.</p>
+      </div>
+      <div class="card">
+        <h3>Outils de compatibilité</h3>
+        <p>Vérifiez automatiquement si votre PC est prêt.</p>
+      </div>
+      <div class="card">
+        <h3>Assistant vidéo</h3>
+        <p>Accédez à nos vidéos explicatives YouTube gratuites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="guides" class="section">
+    <h2>Guides Populaires</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Contourner TPM & Secure Boot</h3>
+        <p>Installation sans puce TPM ni Secure Boot via Rufus.</p>
+      </div>
+      <div class="card">
+        <h3>Créer une clé USB bootable</h3>
+        <p>Étapes illustrées avec outils gratuits.</p>
+      </div>
+      <div class="card">
+        <h3>Installer avec une machine virtuelle</h3>
+        <p>Utilisez VirtualBox pour tester sans modifier votre système.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="astuces" class="section">
+    <h2>Optimisation & Astuces</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Booster la vitesse</h3>
+        <p>Optimisez Windows 11 pour de meilleures performances.</p>
+      </div>
+      <div class="card">
+        <h3>Désactiver services inutiles</h3>
+        <p>Libérez de la mémoire en un clic.</p>
+      </div>
+      <div class="card">
+        <h3>Personnaliser l'interface</h3>
+        <p>Rendez votre bureau unique avec des thèmes récents.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Nous contacter</h2>
+    <form action="https://formsubmit.co/votre-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Windows11Facile - Tous les services sont gratuits, sécurisés et accessibles</p>
+  </footer>
+
+</body>
+</html>
